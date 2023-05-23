@@ -1,0 +1,19 @@
+<section id="portfolio" class="portfolio">
+    <div class="headline-container" data-aos="fade-left" data-aos-once="true">
+        <div></div>
+        <h1 translate>Portfolio</h1>
+        <div></div>
+    </div>
+    <div data-aos="fade-right" data-aos-once="true">
+        <span class="underline" translate>
+            This page is a sample of my work - Please feel free to try them out.
+        </span>
+    </div>
+    <div>
+        <app-project *ngFor="let project of projects; let i = index" [indexImpair]="i % 2 != 0" [title]="project.title"
+            [explanation]="project.explanation" [img]="project.img" [language]="project.language" [web]="project.web"
+            [git]="project.git"></app-project>
+    </div>
+    <img class="splash-portfolio1" src="../../assets/img/splash-portfolio1.png" alt="splash-portfolio-1">
+    <img class="splash-portfolio2" src="../../assets/img/splash-portfolio2.png" alt="splash-portfolio-2">
+</section>

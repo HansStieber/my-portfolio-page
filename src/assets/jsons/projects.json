@@ -1,0 +1,34 @@
+[
+    {
+        "title": "Join",
+        "language": "JavaScript | HTML | CSS",
+        "img": "join",
+        "explanation": "join_explanation",
+        "git": "https://github.com/HansStieber/Join",
+        "web": "join"
+    },
+    {
+        "title": "El Pollo Loco",
+        "language": "JavaScript | HTML | CSS",
+        "img": "elpolloloco",
+        "explanation": "elpolloloco_explanation",
+        "git": "https://github.com/HansStieber/El-pollo-loco",
+        "web": "elpolloloco"
+    },
+    {
+        "title": "Ring of Fire",
+        "language": "Angular | Typescript | SCSS | HTML | Firebase",
+        "img": "ringoffire",
+        "explanation": "ringoffire_explanation",
+        "git": "https://github.com/HansStieber/ring_of_fire",
+        "web": "ringoffire"
+    },
+    {
+        "title": "Pokédex",
+        "language": "Angular | Typescript | Angular Material | HTML | CSS | API",
+        "img": "pokedex",
+        "explanation": "pokedex_explanation",
+        "git": "https://github.com/HansStieber/Pok-dex-with-Angular",
+        "web": "pokedex"
+    }
+]

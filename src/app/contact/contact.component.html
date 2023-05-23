@@ -1,0 +1,41 @@
+<section id="contact" class="contact">
+    <div class="upper-container">
+        <div class="left-column">
+            <div>
+                <div class="line-left"></div>
+                <h1 data-aos="fade-right" data-aos-once="true" translate>Contact</h1>
+            </div>
+            <div data-aos="fade-right" data-aos-once="true">
+                <h2 translate>Got a problem to solve?</h2>
+                <p translate>Contact me through this form, I am interested in hearing you, knowing your ideas and
+                    contributing to
+                    your
+                    projects with my work.</p>
+                <p translate>Need a Frontend developer? <b translate>Contact me!</b></p>
+            </div>
+        </div>
+        <div class="right-column">
+            <form (submit)="sendMail()" ngNativeValidate #myForm>
+                <input id="name" required placeholder="Your name" type="text" name="name" #nameField
+                    data-aos="fade-left" data-aos-once="true">
+                <input id="mail" required placeholder="Your email" type="email" name="mail"
+                    pattern="[a-zA-Z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+                    #mailField data-aos="fade-left" data-aos-once="true">
+                <textarea id="message" required placeholder="Your message" type="text" name="message" #messageField
+                    data-aos="fade-left" data-aos-once="true"></textarea>
+                <div class="button-container" data-aos="fade-left" data-aos-once="true">
+                    <button id="sendButton" #sendButton class="btn-orange"
+                        [ngClass]="{'confirmation': messageSent === true}" translate>Send message :)</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="lower-container" data-aos="fade-up" data-aos-once="true">
+        <a (click)="scrollToStart()">
+            <img #arrowUp src="../../assets/img/go-up.png"
+                (mouseover)="changeImgSrc('../../assets/img/go-up-orange.png')"
+                (mouseleave)="changeImgSrc('../../assets/img/go-up.png')">
+        </a>
+    </div>
+    <img class="splash-contact" src="../../assets/img/splash-contact.png">
+</section>

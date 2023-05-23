@@ -1,0 +1,117 @@
+header {
+    position: fixed;
+    height: 110px;
+    top: 0px;
+    z-index: 10;
+    width: 100%;
+    max-width: 1920px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 37px 100px;
+    background-color: #141D2F;
+    overflow: hidden !important;
+
+    @media screen and (max-width: 992px) {
+        padding: 37px 25px;
+    }
+
+    a {
+        text-decoration: none !important;
+    }
+
+    span {
+        font-size: 32px;
+        font-weight: 600;
+        color: white;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    nav {
+        display: flex;
+        gap: 46px;
+
+        @media screen and (max-width: 992px) {
+            display: none;
+        }
+
+        a:last-child {
+            margin-left: -25px;
+        }
+
+        a {
+            display: flex;
+            flex-direction: column;
+            height: 38px;
+
+            span {
+                font-size: 23px;
+                font-weight: 400;
+                color: white;
+                transition: color 0.2s ease-in-out;
+
+                &:hover {
+                    color: #FA7902;
+                }
+            }
+
+            img {
+                display: none;
+                width: 55px;
+                height: 4px;
+            }
+        }
+    }
+}
+
+.selected {
+    display: block !important;
+    color: #FA7902 !important;
+}
+
+.language {
+    color: #FA7902 !important;
+}
+
+.scrolled {
+    background-color: red;
+    color: white;
+}
+
+@media screen and (min-width: 992px) {
+
+    .burger,
+    .mobile-language-select {
+        display: none;
+    }
+}
+
+.mobile-language-select {
+    span {
+        font-size: 22px;
+        padding-right: 10px;
+    }
+}
+
+.mobile-nav {
+    position: fixed;
+    top: 110px;
+    z-index: 15;
+    width: 100vw;
+    height: calc(100vh - 110px);
+    background-color: rgb(30, 43, 69);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    a {
+        text-decoration: none;
+        color: white;
+        font-size: 24px;
+        margin-bottom: 12px;
+    }
+}

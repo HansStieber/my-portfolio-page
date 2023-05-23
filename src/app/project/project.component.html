@@ -1,0 +1,21 @@
+<div class="project-container" [ngClass]="{'reversed': indexImpair === true}" data-aos="fade-up" data-aos-once="true">
+    <div class="img-container">
+        <div [ngClass]="{'jc-flex-end': indexImpair === false}">
+            <img src="../../assets/img/{{img}}-screen.png" alt="{{img}}-screen">
+        </div>
+    </div>
+    <div class="space">
+    </div>
+    <div class="info-container">
+        <div class="info-project" [ngClass]="{'ai-flex-end': indexImpair === true}">
+            <h2>{{ title }}</h2>
+            <h3>{{ language }}</h3>
+            <span [ngClass]="{'text-end': indexImpair === true}" translate>{{ explanation }}</span>
+        </div>
+        <div class="button-box" [ngClass]="{'jc-flex-end': indexImpair === true}">
+            <a href="https://{{web}}.hans-stieber.com" target="_blank" data-aos="fade-up" data-aos-once="true"><button class="b1"
+                    translate>Live test</button></a>
+            <a href="{{git}}" target="_blank"><button class="b2" data-aos="fade-up" data-aos-once="true">Github</button></a>
+        </div>
+    </div>
+</div>

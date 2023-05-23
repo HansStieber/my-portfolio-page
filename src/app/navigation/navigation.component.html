@@ -1,0 +1,47 @@
+<header>
+    <div>
+        <a (click)="scrollToSection('start-screen')">
+            <span>H</span>
+            <span class="red">a</span>
+            <span>ns</span>
+        </a>
+    </div>
+    <nav>
+        <a (click)="scrollToSection('about-me')">
+            <span [ngClass]="{'selected': selectedMenuItem === 'about-me'}" translate>About me</span>
+            <img [ngClass]="{'selected': selectedMenuItem === 'about-me'}" src="../../assets/img/selected.png">
+        </a>
+        <a (click)="scrollToSection('my-skills')">
+            <span [ngClass]="{'selected': selectedMenuItem === 'my-skills'}" translate>Skills</span>
+            <img [ngClass]="{'selected': selectedMenuItem === 'my-skills'}" src="../../assets/img/selected.png">
+        </a>
+        <a (click)="scrollToSection('portfolio')">
+            <span [ngClass]="{'selected': selectedMenuItem === 'portfolio'}" translate>Portfolio</span>
+            <img [ngClass]="{'selected': selectedMenuItem === 'portfolio'}" src="../../assets/img/selected.png">
+        </a>
+        <a (click)="translateSite('en')">
+            <span [ngClass]="{'language': selectedLanguage === 'en'}">EN</span>
+        </a>
+        <a (click)="translateSite('de')">
+            <span [ngClass]="{'language': selectedLanguage === 'de'}">DE</span>
+        </a>
+    </nav>
+    <div class="mobile-language-select">
+        <a (click)="translateSite('en')">
+            <span [ngClass]="{'language': selectedLanguage === 'en'}">EN</span>
+        </a>
+        <a (click)="translateSite('de')">
+            <span [ngClass]="{'language': selectedLanguage === 'de'}">DE</span>
+        </a>
+    </div>
+    <img *ngIf="menuOpen == false" (click)="openMenu()" class="burger" src="../../assets/img/burger.png"
+        alt="menu-button">
+    <a *ngIf="menuOpen == true" href="#top"><img (click)="closeMenu()" class="burger" src="../../assets/img/exit.png"
+            alt="exit-button"></a>
+</header>
+<nav class="mobile-nav" *ngIf="menuOpen" [@slideInOut]>
+    <a (click)="scrollToSection('about-me')" translate>About me</a>
+    <a (click)="scrollToSection('my-skills')" translate>My skills</a>
+    <a (click)="scrollToSection('portfolio')" translate>Portfolio</a>
+    <a (click)="scrollToSection('contact')" translate><span>Contact</span></a>
+</nav>

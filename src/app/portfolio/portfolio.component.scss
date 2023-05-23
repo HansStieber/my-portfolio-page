@@ -1,0 +1,98 @@
+.portfolio {
+    position: relative;
+    padding-top: 110px;
+    z-index: 1;
+
+    div:nth-child(2) {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 35px;
+    }
+}
+
+.headline-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+
+    h1 {
+        display: inline-block;
+        margin: 0 36px;
+
+        @media screen and (max-width: 992px) {
+            margin: 0 5px;
+        }
+    }
+
+    div:first-child {
+        width: 50%;
+        height: 4px;
+        border-right: 110px solid #FF4747;
+
+        @media screen and (max-width: 992px) {
+            border-right: 50px solid #FF4747;
+        }
+    }
+
+    div:last-child {
+        width: 50%;
+        height: 4px;
+        background-color: #FF4747;
+    }
+}
+
+.splash-portfolio1 {
+    position: absolute;
+    top: 1000px;
+    left: -200px;
+    z-index: -1;
+
+    @media screen and (max-width: 992px) {
+        top: 700px;
+        left: -300px;
+        transform: scale(0.8);
+    }
+
+    @media screen and (max-width: 700px) {
+        left: -350px;
+        transform: scale(0.5);
+    }
+
+    @media screen and (max-width: 500px) {
+        top: 600px;
+        left: -350px;
+    }
+
+    @media screen and (max-width: 992px) {
+    }
+}
+
+.splash-portfolio2 {
+    position: absolute;
+    top: 1500px;
+    right: -600px;
+    transform: scaleX(-1);
+    z-index: -1;
+
+    @media screen and (max-width: 992px) {
+        top: 1500px;
+        right: -600px;
+    }
+
+    @media screen and (max-width: 550px) {
+        right: -700px;
+    }
+
+    @media screen and (max-width: 500px) {
+        top: 1200px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .underline {
+        display: inline-block;
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+}
